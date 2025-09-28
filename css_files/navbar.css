@@ -1,0 +1,36 @@
+*{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+li a{
+    color: rgb(31,31,31);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+
+.navbar{
+    background: rgb(255, 231, 145);
+    font-family: "Oswald", Arial;
+    padding-right: 15px; padding-left: 15px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    height: 60px;
+    width: auto;
+    padding: 15px
+    margin: 15px;
+}
+
