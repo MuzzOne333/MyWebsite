@@ -5,13 +5,12 @@
     font-family: "Oswald", sans-serif;
 }
 
-
+/* CARDS */
 .card-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
-
 }
 
 
@@ -22,16 +21,18 @@
     overflow:hidden;
     box-sizing: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
+    transition: 0.5s;
+    transform: scale(1. 1);
 }
 .card img{
     width: 100%;
     height: auto;
 }
 .card:hover{
-    border-color:darkgoldenrod;
     box-shadow: 0 4px 18px 0 rgba(0,0,0,0.4);
+    transition: 0.5s;
+    transform: scale(1.1, 1.1) rotate(3deg);
 }
-
 
 .card-content{
     padding: 16px;
@@ -55,11 +56,13 @@
     color:white;
 }
 
+/* BASE SETTINGS */
+
 body {
     background-color:lightyellow ;
     margin: 0px;
 }
-/*my classes */
+
 .base{
     font-family:'Oswald', sans-serif;
     color:rgb(31,31,31);
@@ -83,3 +86,23 @@ body {
     border: 10px solid rgb(196, 131, 85);
 }
 
+/* VERTICAL NAVIGATION */
+.ver-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.ver-nav li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.ver-nav li a:hover {
+  background-color: #555555;
+  color: white;
+}

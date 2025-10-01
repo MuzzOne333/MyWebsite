@@ -26,8 +26,27 @@ li a {
     "navbar navbar"
     "header main"
     "footer footer";
-  min-height: 100vh;
 }
+
+header {
+  grid-area: header;
+  padding: 10px;
+  text-align: left;
+  align-items: space-between;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+  text-align: right;
+  padding: 10px 20px;
+  background: rgb(255, 255, 190);
+}
+
 
 .navbar {
   background: rgb(255, 231, 145);
@@ -35,6 +54,17 @@ li a {
   padding-right: 15px;
   padding-left: 15px;
   grid-area: navbar;
+}
+
+.navbar li {
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.navbar li:hover {
+  background-color: rgba(211, 192, 121, 0.5);
+  border-radius: 8px;
+  transition: background-color 0.6s;
 }
 
 .navdiv {
@@ -50,28 +80,7 @@ li a {
   margin: 5px;
 }
 
-
-header {
-  grid-area: header;
-  padding: 10px;
-  text-align: left;
-}
-
 h1 {
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
-}
-
-
-main {
-  grid-area: main;
-  padding: 20px;
-}
-
-
-footer {
-  grid-area: footer;
-  text-align: right;
-  padding: 10px 20px;
-  background: #f1f1f1;
 }

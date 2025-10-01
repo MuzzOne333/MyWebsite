@@ -8,7 +8,7 @@
     <title>My first Webpage</title>
 </head>
 <body>
-    <div id="page">
+    <div id="page" id="navigation-nav">
         <nav class="navbar">
             <div class="navdiv">
                 <div class="logo">
@@ -19,14 +19,19 @@
                 <ul>
                     <li> <a href="about.html"> About ME </a> </li>
                     <li> <a href="spongebob.html"> SpongeBob </a> </li>
-                    <li> <a href="aitu.html"> Study Place </a> </li>
                 </ul>
             </div>
         </nav>
         
-        <header><h1>SpongeBob images</h1></header>
+        <header class="ver-nav">
+            <ul>
+                <li><a href="#navigation-nav">Navigation</a></li>
+                <li><a href="#main-nav">Gallery</a></li>
+                <li><a href="#footer-nav">Contact</a></li>
+            </ul>
+        </header>
 
-        <main>
+        <main id="main-nav">
             <div class="gallery">
                 <a target="_blank" href="C:\Users\Asus\Documents\MUZAFFAR\AITU_Subjects\Web_Technologies\Assignment\MyWebsite\MyWebsite\images\Spongebob\5d2cd0ec970e72f5b575bcc6b4671311ed4b518e_hq.png">
                 <img src="C:\Users\Asus\Documents\MUZAFFAR\AITU_Subjects\Web_Technologies\Assignment\MyWebsite\MyWebsite\images\Spongebob\5d2cd0ec970e72f5b575bcc6b4671311ed4b518e_hq.png" alt="SpongeBob">
@@ -83,7 +88,7 @@
             </div>
         </main>
 
-        <footer>
+        <footer id="footer-nav">
             <p>Contact: 241318@astanait.edu.kz</p>
         </footer>
     </div>
