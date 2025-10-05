@@ -5,13 +5,12 @@
     font-family: "Oswald", sans-serif;
 }
 
-
+/* CARDS */
 .card-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
-
 }
 
 
@@ -22,16 +21,18 @@
     overflow:hidden;
     box-sizing: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
+    transition: 0.5s;
+    transform: scale(1. 1);
 }
 .card img{
     width: 100%;
     height: auto;
 }
 .card:hover{
-    border-color:darkgoldenrod;
     box-shadow: 0 4px 18px 0 rgba(0,0,0,0.4);
+    transition: 0.5s;
+    transform: scale(1.1, 1.1) rotate(3deg);
 }
-
 
 .card-content{
     padding: 16px;
@@ -55,31 +56,63 @@
     color:white;
 }
 
+/* BASE SETTINGS */
+
 body {
     background-color:lightyellow ;
     margin: 0px;
 }
-/*my classes */
-.base{
-    font-family:'Oswald', sans-serif;
-    color:rgb(31,31,31);
+
+/* VERTICAL NAVIGATION */
+.ver-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
 }
 
-.base p{
-    font-size: 15px;
+.ver-nav li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-.table-box{
-    padding: 3px;
-    border: 5px solid rgb(196, 131, 85);
-    margin: 10px;
-
-    width: 200px;
-    height: 100px;
-}
-.image-layout{
-    width: 400px;
-    height: 200px;
-    border: 10px solid rgb(196, 131, 85);
+.ver-nav li a:hover {
+  background-color: #555555;
+  color: white;
 }
 
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+
+/* Base font (desktop) */
+h1 {
+  font-size: 48px;
+}
+p {
+  font-size: 18px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
