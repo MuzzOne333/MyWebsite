@@ -3,51 +3,47 @@
     <link rel="stylesheet" href="C:\Users\Asus\Documents\MUZAFFAR\AITU_Subjects\Web_Technologies\Assignment\MyWebsite\MyWebsite\css_files\style.css">
     <link rel="stylesheet" href="C:\Users\Asus\Documents\MUZAFFAR\AITU_Subjects\Web_Technologies\Assignment\MyWebsite\MyWebsite\css_files\navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=DIN+Condensed&family=Oswald&family=Montserrat&display=swap" rel="stylesheet">
-    <title>My first Webpage</title>
+    <title>Portfolio - Boneshock</title>
 </head>
 <body>
-    <nav class = "navbar">
-        <div class="navdiv">
-        <div class="logo">
-            <a href="index.html">
-                <img src="C:\Users\Asus\Documents\MUZAFFAR\AITU_Subjects\Web_Technologies\Assignment\MyWebsite\MyWebsite\images\Boneshock.png" alt="logo">
-            </a>
-        </div>
-        <ul>
-            <li> <a href="about.html"> About ME </a> </li>
-            <li> <a href="spongebob.html"> SpongeBob </a> </li>
-            <li> <a href="aitu.html"> Study Place </a> </li>
-        </ul>
-        </div>
-    </nav>
+    <div id="page" id="navigation-nav">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="C:\Users\Asus\Documents\MUZAFFAR\AITU_Subjects\Web_Technologies\Assignment\MyWebsite\MyWebsite\images\Boneshock.png" alt="logo">
+                    </a>
+                </div>
+                <ul>
+                    <li> <a href="about.html"> Portfolio </a> </li>
+                    <li> <a href="spongebob.html"> SpongeBob </a> </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <header class="ver-nav">
+            <ul>
+                <li><a href="#navigation-nav">Navigation</a></li>
+                <li><a href="#main-nav">Portfolio</a></li>
+                <li><a href="#footer-nav">Contact</a></li>
+            </ul>
+        </header>
 
-    <main class="base">
-        <h2 id="my-info">
-            My name is Muzaffar Kapezov
-        </h2>
-        <p>
-            I study Software Engeneering
-        </p>
-        <p>
-            I'm 19 years old
-        </p>
+        <main id="main-nav" class="base">
+            <section class="portfolio-section">
+                <h2>My Portfolio</h2>
+                <p>Here are some of my design and development works:</p>
+                <div class="container">
+                    <div class="box">Website Layout Design</div>
+                    <div class="box">Poster Illustration</div>
+                    <div class="box">3D Model Showcase</div>
+                </div>
+            </section>
+        </main>
 
-        <h3>
-            Those are my hobbies
-        </h3>
-
-        <ol>
-            <li>
-                Doomscrolling
-            </li>
-            <li>
-                Gaming
-            </li>
-            <li>
-                Modeling
-            </li>
-        </ol>
-
-    </main>
+        <footer id="footer-nav">
+            <p>Contact: 241318@astanait.edu.kz</p>
+        </footer>
+    </div>
 </body>
 </html>

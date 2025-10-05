@@ -38,7 +38,7 @@ header {
 main {
   grid-area: main;
   padding: 20px;
-}
+}-
 
 footer {
   grid-area: footer;
