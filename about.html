@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My First Webpage</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css_files/style.css">
+	<link rel="stylesheet" href="css_files/typography.css">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto&family=DIN+Condensed&family=Oswald&family=Montserrat&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/Boneshock.png" alt="logo" width="50" height="50"
+					class="d-inline-block align-text-center">
+				MyWebsite
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="about.html">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="spongebob.html">SpongeBob</a></li>
+					<li class="nav-item"><a class="nav-link" href="#footer-nav">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- MAIN -->
+	<main class="container my-5 text-center">
+
+		<h1 class="mb-4">My Portfolio</h1>
+
+		<div class="card-container justify-content-center">
+
+			<!-- Portfolio Card -->
+			<div class="card">
+				<img src="images\muzaffar.png" alt="Muzaffar Kapezov Photo">
+				<div class="card-content">
+					<h3>Muzaffar Kapezov</h3>
+					<p>Student at Astana IT University - passionate about technology, design, and creating interactive
+						projects with clean code and smooth user experiences.</p>
+					<a href="mailto:241318@astanait.edu.kz" class="btn">Contact Me</a>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<!-- FOOTER -->
+	<footer id="footer-nav" class="bg-dark text-white text-center py-3">
+		<p>Contact: 241318@astanait.edu.kz</p>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
